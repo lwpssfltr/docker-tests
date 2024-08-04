@@ -1,0 +1,12 @@
+version: "1.1"
+services:
+  node-first:
+    image: node-first-dockered
+    container_name: composed-first
+    ports:
+      - 8030:8030
+  node-second:
+    image: node-second-dockered
+    container_name: composed-second
+    ports:
+      -  8031:8031
